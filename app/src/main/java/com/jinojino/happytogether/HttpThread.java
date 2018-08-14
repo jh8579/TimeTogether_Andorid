@@ -20,13 +20,13 @@ public class HttpThread extends Thread {
     String result;
     int id;
 
-    public HttpThread(int id){
-        this.id = id;
+    public HttpThread(){
+
     }
 
     public void run(){
         HttpClient httpClient = new DefaultHttpClient();
-        String urlString = "http://timetotogether.us-east-1.elasticbeanstalk.com/getNoise/" + id;
+        String urlString = "http://timetotogether.us-east-1.elasticbeanstalk.com/getNoise";
         try {
             URI url = new URI(urlString);
             HttpGet httpGet = new HttpGet();

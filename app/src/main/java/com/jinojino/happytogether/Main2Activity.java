@@ -39,14 +39,15 @@ public class Main2Activity extends AppCompatActivity {
 
             switch (item.getItemId()) {
                 case R.id.navigation_home:
+                    setTitle("층간소음 그래프");
+                    replaceFragment(new RoomGraphFragment());
+                    return true;
+
+                case R.id.navigation_graph:
                     setTitle("층간소음");
                     replaceFragment(new MainFragment());
                     return true;
 
-                case R.id.navigation_graph:
-                    setTitle("층간소음 그래프");
-                    replaceFragment(new GraphFragment());
-                    return true;
             }
             return false;
         }
@@ -64,7 +65,7 @@ public class Main2Activity extends AppCompatActivity {
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.add(R.id.main_fragment, new MainFragment()).commit();
+        fragmentTransaction.add(R.id.main_fragment, new RoomGraphFragment()).commit();
 
 
     }
