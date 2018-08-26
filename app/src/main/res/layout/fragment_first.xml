@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/first_frame_layout"
+    tools:context=".fragment.FirstFragment">
+
+    <Button
+        android:id="@+id/postButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="400dp"
+        android:text=""
+        android:background="@color/colorTransparent"
+        />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="235dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="346dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/clock_shade" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/clock_img" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="108dp"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:text=""
+        />
+
+
+</FrameLayout>

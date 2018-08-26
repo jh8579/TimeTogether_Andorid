@@ -3,12 +3,12 @@
 
     <item
         android:id="@+id/navigation_home"
-        android:icon="@drawable/ic_home_black_24dp"
-        android:title="홈" />
+        android:title=""
+        />
 
     <item
         android:id="@+id/navigation_graph"
-        android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="그래프" />
+        android:title=""
+        />
 
 </menu>

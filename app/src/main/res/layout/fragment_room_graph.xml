@@ -3,13 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RoomGraphFragment">
+    tools:context=".fragment.RoomGraphFragment"
+    >
 
     <com.github.mikephil.charting.charts.LineChart
         android:id="@+id/roomNoiseChart"
-        android:layout_width="match_parent"
-        android:layout_height="275dp">
+        android:layout_width="302dp"
+        android:layout_height="218dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp">
 
     </com.github.mikephil.charting.charts.LineChart>
+
 
 </FrameLayout>
